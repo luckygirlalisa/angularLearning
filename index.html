@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app='name'>
+
+<head>
+  <script type="text/javascript" src="angular/angular.js"></script>
+  <script type="text/javascript" src="angular/angular-route.js"></script>
+  <script type="text/javascript" src="routeConfigure.js"></script>
+  <script type="text/javascript" src="controllers/userController.js"></script>
+  <script type="text/javascript" src="controllers/policyController.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/names.css">
+</head>
+
+<body>
+  	<div class="header">
+		<a href="#user">Show User</a>
+  		<a href="#policy">Show Policy</a>
+  	</div>
+  	<div ng-view></div>
+  	<div class="footer" ng-controller="commonCtrl">{{message}}</div>
+</body>
+
+</html>
