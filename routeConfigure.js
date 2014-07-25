@@ -1,11 +1,11 @@
 var nameModule = angular.module('name', ['ngRoute'])
 nameModule.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
-		when('/user', {
+		when('/user/:userId', {
 			templateUrl: 'templates/add-name.html',
 			controller: 'userCtrl'
 		}).
-		when('/policy', {
+		when('/policy/:policyId', {
 			templateUrl: 'templates/add-policy.html',
 			controller: 'policyCtrl'
 		}).

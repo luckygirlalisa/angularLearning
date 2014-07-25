@@ -11,12 +11,15 @@
 </head>
 
 <body>
-  	<div class="header">
-		<a href="#user">Show User</a>
-  		<a href="#policy">Show Policy</a>
-  	</div>
-  	<div ng-view></div>
-  	<div class="footer" ng-controller="commonCtrl">{{message}}</div>
+  <section>
+    <div class="header">
+    <a href="#user/1">Show User</a>
+      <a href="#policy/2">Show Policy</a>
+    </div>
+    <div ng-view></div>
+    <div class="footer" ng-controller="commonCtrl">{{message}}</div>
+    </table>
+  </section>
 </body>
 
 </html>
