@@ -1,4 +1,4 @@
-nameModule.controller('userCtrl', ['$scope', function($scope) {
+nameModule.controller('userCtrl', ['$scope', '$routeParams', function($scope, $routeParams) {
 	$scope.addName = function() {
 		if ($scope.nameCount == undefined) {
 			$scope.nameCount = 0;
@@ -6,4 +6,6 @@ nameModule.controller('userCtrl', ['$scope', function($scope) {
 		$scope.nameCount += 1;
 		$scope.name = "";
 	};
+
+	$scope.userId = $routeParams.userId;
 }]);

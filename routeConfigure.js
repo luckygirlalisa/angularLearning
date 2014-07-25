@@ -5,7 +5,7 @@ nameModule.config(['$routeProvider', function($routeProvider) {
 			templateUrl: 'templates/add-name.html',
 			controller: 'userCtrl'
 		}).
-		when('/policy/:policyId', {
+		when('/policy', {
 			templateUrl: 'templates/add-policy.html',
 			controller: 'policyCtrl'
 		}).
